@@ -47,26 +47,278 @@ table {
 	border-spacing: 0;
 }
 
+
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0px 20px 0px 20px;
+}
+
+h1,h2,h3,span,a,ul,li,th,td{
+	font-family: "微軟正黑體";
+}
+
+
+.social{
+	background: #f6f6f6;
+	padding: 5px 0px 5px 0px;
+}
+
+.social .container{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.social .container a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.social	.container	img{
+	margin-right: 2px;
+}
+
+.social .container .fb{
+	color: #45609e;
+	border-right: 1px solid #9a9a9a;
+	padding-right: 6px;
+}
+
+.social .container .twitter{
+	color: #02adf6;
+	margin-left: 6px;
+}
+
+
+.header{
+	background-image: url(../images/Banner.png);
+	height: 418px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.banner{
+	background: white;
+	padding: 8px 0px 8px 0px;
+	/* position: relative; */
+}
+
+.banner .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner ul{
+	display: flex;
+}
+
+.banner li a{
+	color: #00cb9b;
+	padding: 0px 10px 16px 10px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.banner li a:hover{
+	border-bottom: 3px solid #00cb9b;
+}
+
 .wrap{
-    width: 1000px;
-    margin: 0 auto;
+	width: 1000px;
+	margin: 0 auto;
 }
 
-.header .gray{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #f6f6f6f6;
+.header .wrap h1{
+	background-color: rgba(0, 0, 0, 0.3);
+	margin: 95px 0px 92px 0px;
+	padding: 36px 20px 36px 20px;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: white;
 }
 
-.header .menu{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 8px;
-    padding-bottom: 8px;
+
+.course{
+	margin-top: 62px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.header .menu .white{
-    display: flex;
+.course .item{
+	width: 300px;
+	box-shadow: 1px 1px 3px #9a9a9a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.course .item:hover{
+	box-shadow: 3px 3px 3px #9a9a9a;
+}
+
+.course .item .html{
+	margin: 24px 0px 14px 0px;
+}
+
+.course .item .rwd{
+	margin: 42px 0px 50px 0px;
+}
+
+.course .item .jquery{
+	margin: 34px 0px 22px 0px;
+}
+
+.course .item h2{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom:10px;
+	text-align: center;
+}
+
+.course .item p{
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.course .item ul{
+	align-self: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.course .item ul li{
+	margin-right: 16px;
+}
+
+
+.compare{
+	margin: 62px 62px 60px 62px;
+}
+
+.compare h2{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.compare table tr:hover{
+	background-color: rgba(0, 203, 155, 0.05);
+}
+
+.compare table th{
+	background: #f7f7f7;
+	padding: 8px 106px 8px 22px;
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	text-align: left;
+}
+
+.compare table td{
+	font-size: 12px;
+	padding: 8px 106px 8px 22px;
+	font-size: 12px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.compare table .highlight{
+	color: #00cb9b;
+}
+
+
+.contact{
+	background: linear-gradient(#006749,#02986e);
+	padding: 38px 0px 28px 0px;
+}
+
+.contact h2{
+	font-size: 22px;
+	font-weight: bold; 
+	color: white;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.contact .information form{
+	display: flex;
+}
+
+.contact .information form textarea{
+	margin-right: 40px;
+	width: 460px;
+	height: 245px;
+	border-radius: 5px;
+	resize: none;
+}
+
+.contact .information form .personal{
+	display: flex;
+	flex-direction: column;
+}
+
+.contact .information form .personal p{
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.contact .information form .personal input{
+	border-radius: 5px;
+	margin-bottom: 16px;
+	width: 460px;
+	padding: 8px 10px 8px 10px;
+	border: none; 
+}
+
+.contact .information form .personal .button{
+	border-radius: 5px;
+	margin-top: 4px;
+	width: 70px;
+	height: 32px; 
+	background: #00cc98;
+	color: white;
+	align-self: flex-end;
+}
+
+.contact .information form .personal .button:hover{
+	background: #00bb8c;
+}
+
+.footer{
+	padding: 25px 0px 25px 0px;
+}
+
+.footer .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer li{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.footer span{
+	color: #e72d71;
 }
