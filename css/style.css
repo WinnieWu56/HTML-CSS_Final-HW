@@ -97,6 +97,10 @@ h1,h2,h3,span,a,ul,li,th,td{
 	margin-left: 6px;
 }
 
+.social .container p:hover{
+	font-weight: bold;
+}
+
 
 .header{
 	background-image: url(../images/Banner.png);
